@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Portfolio Dulcinea Peña</title>
+</head>
+<body>
+    
+<div class="row primrow">
+    <div class="col-md-4" >
+        <div class="row menu">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link uno" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dos" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link tres" href="#">Contact</a>
+                </li>
+                
+              </ul>
+        </div>
+
+        <div class="row deperfil">
+            <img class="perfil1" src="assets/perfil1.jpg">
+        </div>
+
+        <div class="row mifoto">
+            <img class="demifoto" src="assets/yo.jpg">
+        </div>
+
+        <div class="row nombre">
+            <h1>Dulcinea Peña</h1>
+            <p class="subtitulo">Web Developer</p>
+        </div>
+
+    </div>
+
+
+   <!-- MENU UNO -->
+    <div class="col-md-8 informacion">
+        <div class="row">
+            <h2>About Me</h2>
+            <p class="descripcion1">
+                    Hi, wellcome to my page!. I am a web developer based in Mexico City who is wiilling to work with you.  I am encourage to make your company goes to the next step by doing everything your project needs. 
+            </p>
+        </div>
+        <div class="row">
+            <h2>What I am doing now</h2>
+            <p class="descripcion2">
+            <ul>
+                <li class="descripcion2">
+                    <strong>Studying</strong> at Tecnológico de Monterrey Coding Bootcamp at Santa Fe Campus
+                </li>
+                <li class="descripcion2">
+                    Again! Hoping to work with <strong>you!</strong>
+                </li>
+            </ul>
+            </p>
+        </div>
+
+        <br>
+        <div class="row">        
+         <a class="botoncontacto" href="assets/resumeDulcinea.pdf">See my Résumé</a>          
+        </div>
+
+    </div>
+
+    <!-- MENU DOS -->
+    <div class="col-md-8 informacion2">
+            <h2>Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="imgportfolio" src="assets/puntoseguro.jpg">
+                </div>
+                <div class="col-md-8">
+                        <h3>Punto seguro</h3>
+                        <p class="descripcion1">
+                            
+                            My team and I bulit an application where CDMX citizens can make crime reports in a map, so that can help people to find the better places to live and walk across the city.
+                        </p>
+                        <a class="linkaportfolio" href="https://deshrimp.github.io/Punto-Seguro/">SEE IT IN ACTION</a>
+                        
+                </div>           
+            </div>
+
+            <div class="brake"></div>
+            
+            <div class="row">
+                    <div class="col-md-4">
+                        <img class="imgportfolio" src="assets/giphy.jpg">
+                    </div>
+                    <div class="col-md-8">
+                            <h3>Giphy Api</h3>
+                            <p class="descripcion1">
+                                
+                               An application where you can see (play and pause) the latest gifs and you can search introducing your favorite topic.
+                            </p>
+                            <a class="linkaportfolio" href="https://dulcineapena1.github.io/giphyapi.github.io/">SEE IT IN ACTION</a>
+                            <a class="linkaportfolio" href="https://github.com/dulcineapena1/giphyapi.github.io">GET INSIDE</a>
+                    </div>           
+            </div>
+            
+            <div class="brake"></div>
+            
+            <div class="row">
+                    <div class="col-md-4">
+                        <img class="imgportfolio" src="assets/trivia.jpg">
+                    </div>
+                    <div class="col-md-8">
+                            <h3>Trivia Game</h3>
+                            <p class="descripcion1">
+                                
+                               It is allways good to relax, so I build a trivia based on the Record-Guiness, at the end you will see your score and the good and wrong answers.
+                            </p>
+                            <a class="linkaportfolio" href="https://dulcineapena1.github.io/TriviaGame.github.io/">SEE IT IN ACTION</a>
+                            <a class="linkaportfolio" href="https://github.com/dulcineapena1/TriviaGame.github.io">GET INSIDE</a>
+                    </div>           
+            </div>
+            
+    
+        </div>
+
+
+    <!-- MENU TRES -->
+    <div class="col-md-8 informacion3">
+            <h2>Where to find me</h2>
+            <div class="row">
+                
+                
+                <a class="botoncontacto" href="https://github.com/dulcineapena1?tab=repositories">Me in GitHub</a>
+            </div>
+            <br>
+            <div class="row">
+                
+                <a class="botoncontacto" href="https://www.linkedin.com/in/dulcinea-p-3a609b166/">Me in LinkedIn</a>
+            </div>
+            <br>
+            <div class="row">
+                    <p class="descripcion3">
+                            Mail : f.dulcinea.pena@gmail.com
+                            <br>
+                            Cell : +52 443 237 7538
+                            <br>
+                            Mexico City
+                    </p>
+                    
+            </div>
+            
+            
+    
+        </div>
+
+</div>
+       
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".informacion2").hide();
+    $(".informacion3").hide();
+    $(".informacion").hide();
+})
+
+    $(".uno").click(function(){
+        $(".informacion2").hide();
+        $(".informacion3").hide();
+        $(".informacion").toggle("slow");
+    });
+
+    $(".dos").click(function(){
+        slideToggle=false;
+        $(".informacion").hide();
+        $(".informacion3").hide();
+        $(".informacion2").toggle("slow");
+        
+    });
+
+    $(".tres").click(function(){
+        slideToggle=false;
+        $(".informacion").hide();
+        $(".informacion2").hide();
+        $(".informacion3").toggle("slow");
+        
+    });
+</script>
+
+</body>
+</html>
